@@ -1,0 +1,7 @@
+{
+  "name": "dragnreceive_mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
