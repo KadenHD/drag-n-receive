@@ -1,5 +1,19 @@
 # DragNReceiveV3
 
+Drag-n-Receive est un projet étudiant visant à présenter, lors d’un stand, un système de Click & Collect à l’échelle d’une agglomération, mettant en avant exclusivement des partenaires proposant des produits locaux.
+
+L’objectif du projet est de favoriser les circuits courts en proposant une plateforme numérique permettant aux utilisateurs de :
+* découvrir des commerçants locaux partenaires,
+* commander leurs produits en ligne,
+* récupérer leurs commandes via un système de Click & Collect.
+
+Le projet repose sur une architecture full-stack avec :
+* une API backend pour la gestion des produits, partenaires et commandes,
+* une interface web pour la gestion administration et produits/commandes des partenaires,
+* une application mobile destinée à la démonstration sur stand sur l'achat des produits.
+
+Ce prototype a été conçu comme une preuve de concept, illustrant la faisabilité technique et l’intérêt d’un outil numérique au service de l’économie locale et des commerçants de proximité.
+
 ## Pour le lancer sur le Stand
 
 Connecter le pc et le smartphone en partage de connection.
