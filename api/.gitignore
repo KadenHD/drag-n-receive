@@ -1,0 +1,9 @@
+# Environements file and packages
+node_modules
+.env
+Store/Companies
+Store/Users
+
+# Editors directories / files
+.idea
+.vscode
