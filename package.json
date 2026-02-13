@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "concurrently \"start /b C:\\\\xampp\\\\apache_start.bat\" \"start /b C:\\\\xampp\\\\mysql_start.bat\" \"cd api && npm start\" \"cd web && npm run serve -- --port 8080\" \"cd app && npm run serve -- --port 8081\" \"wait-on http://localhost:8080 http://localhost:8081 && start chrome --incognito https://mailtrap.io/inboxes http://localhost/phpmyadmin/index.php http://localhost:8080 http://localhost:8081\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "wait-on": "^9.0.4"
+  }
+}
