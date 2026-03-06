@@ -1,59 +1,59 @@
 # DragNReceiveV3
 
-Drag-n-Receive est un projet étudiant visant à présenter, lors d’un stand, un système de Click & Collect à l’échelle d’une agglomération, mettant en avant exclusivement des partenaires proposant des produits locaux.
+Drag-n-Receive is a student project aimed at presenting, at a stand, a Click & Collect system on a metropolitan scale, exclusively promoting partners offering local products.
 
-L’objectif du projet est de favoriser les circuits courts en proposant une plateforme numérique permettant aux utilisateurs de :
-* découvrir des commerçants locaux partenaires,
-* commander leurs produits en ligne,
-* récupérer leurs commandes via un système de Click & Collect.
+The goal of the project is to promote short supply chains by offering a digital platform that allows users to:
+* discover local partner retailers,
+* order their products online,
+* pick up their orders via a Click & Collect system.
 
-Le projet repose sur une architecture full-stack avec :
-* une API backend pour la gestion des produits, partenaires et commandes,
-* une interface web pour la gestion administration et produits/commandes des partenaires,
-* une application mobile destinée à la démonstration sur stand sur l'achat des produits.
+The project is based on a full-stack architecture with:
+* a backend API for managing products, partners, and orders,
+* a web interface for managing administration and partners' products/orders,
+* a mobile application for demonstrating product purchases at the booth.
 
-Ce prototype a été conçu comme une preuve de concept, illustrant la faisabilité technique et l’intérêt d’un outil numérique au service de l’économie locale et des commerçants de proximité.
+This prototype was designed as a proof of concept, illustrating the technical feasibility and value of a digital tool serving the local economy and local retailers.
 
-## Pour le lancer sur le Stand
+## To launch it on the stand
 
-Connecter le pc et le smartphone en partage de connection.
-Lancer Laragon et créer la base de données du nom de `dragnreceive` sur <http://localhost/phpmyadmin/> en utf8.
-(Vérifier que le mailer du .env est toujours valide)
+Connect the PC and smartphone using connection sharing.
+Launch Laragon and create the database named `dragnreceive` on <http://localhost/phpmyadmin/> in utf8.
+(Check that the .env mailer is still valid)
 
-Lancer l'API :
+Launch the API:
 
 ```bash
 npm i && npm run Standify && npm start
 ```
 
-> Si l'api tourne sur une autre machine que les applications : Récupérer l'addresse ipv4 affiché dans le terminal suite à cette commande et la garder dans le presse-papier. Remplacer localhost par l'url.
+> If the API is running on a different machine than the applications: Retrieve the IPv4 address displayed in the terminal after running this command and save it to the clipboard. Replace localhost with the URL.
 
-Créer un fichier .env pour l'application mobile :
-
-```.env
-VUE_APP_URL=http://localhost:3000
-```
-
-Lancer l'application mobile :
-
-```bash
-npm i && npm run serve
-```
-
-Créer un fichier .env pour l'application web :
+Create an .env file for the mobile application:
 
 ```.env
 VUE_APP_URL=http://localhost:3000
 ```
 
-Lancer l'application web :
+Launch the mobile application:
 
 ```bash
 npm i && npm run serve
 ```
 
-Il suffira ensuite de rentrer les url des applications dans l'appareil depuis lequel vous souhaitez accéder à l'application voulu.
-> Les deux ports par défaut des applications serront 8080 et 8081.
+Create an .env file for the web application:
 
-Vous pourrez ensuite ajouter les sites au favoris du téléphone (comme raccourcis bureau) pour pouvoir jouer en mode application mobile (sur les deux ça marche).
-> On peux également jouer en mode site web sur pc pour les deux applications.
+```.env
+VUE_APP_URL=http://localhost:3000
+```
+
+Launch the web application:
+
+```bash
+npm i && npm run serve
+```
+
+Then simply enter the application URLs into the device from which you want to access the desired application.
+> The two default ports for the applications are 8080 and 8081.
+
+You can then add the sites to your phone's favorites (as desktop shortcuts) to play in mobile app mode (it works on both).
+> You can also play in website mode on a PC for both applications.
